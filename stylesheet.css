@@ -7,13 +7,12 @@ body{
     font-weight: bolder;
 }
 #header-img{
-    display: block;
     width: fit-content;
     height: fit-content;
     border-radius: 100px;
     float: inherit;
 }
-h{ display: inherit;
+h{
     font-size: 35px;
     font-weight: bold;
 }
@@ -23,14 +22,12 @@ h{ display: inherit;
 
 }
 .article:first-child{
-    display: block;
     width: 60px;
     height: 60px;
     font-size: 40;
     color: orangered;
 }
 .article{
-    display: block;
     width: 50px;
     height: 50px;
     font-size: 31px;
@@ -38,7 +35,6 @@ h{ display: inherit;
     
 }
 .aside{
-    display: block;
     width: 50px;
     height: 50px;
     line-height: 20px;
