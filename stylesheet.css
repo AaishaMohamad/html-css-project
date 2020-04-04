@@ -2,16 +2,19 @@ body{
     background-color: gray;
 }
 #title{
+    margin-left: 100px;
     font-size: 60px;
     text-decoration: underline;
     font-weight: bolder;
 }
 .header{
+    margin-left: 100px;
     font-size: 30px;
     font-weight: bold;
     text-decoration: wavy;
 }
 #header-img{
+    margin-left: 100px;
     border-radius: 100px;
     width: 200px;
     height: 200px;
