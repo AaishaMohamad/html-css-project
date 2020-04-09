@@ -20,48 +20,60 @@ body{
     height: 200px;
     position: relative;
 }
-#article-section{
-    overflow: auto;
-    
-}
-.heading{
-    margin-top: 300px;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-}
-.first{
-    text-align: center;
-    font-size: 28px;
-    margin-top: 250px;
-    text-decoration: underline;
-
-}
-.article:first-child{
-    border-width: 350px;
-    font-size: 24px;
+.articles-section{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid red;
 }
 .article{
-    margin: 90px;
-    border-width: 90px;
-    font-size: 22px;
+    display: flex;
+    font-size: medium;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid #00f3ff2e;
+    
     
 }
-.asbox{
-    border: 300px;
-    background-color: white;
-}
-.aside{
-    margin-bottom: 300px;
-    font-size: 22px;
-    border-width: 80px;
-}
+
 #thefooter{
-    background-color:blue;
+   display: flex;
+   background-color:#00ffdb;
 
 }
-.footer{
-    font-size: 20px;
-    
+.afooter{
+   display: flex;
+   
+    font-size: medium;
+}
+
+
+.sidebar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid red;
+}
+.about{
+    font-size: medium;
+   
+}
+.about-p{
+    font-size: medium;
+}
+@media screen and (min-width:400px){
+
+.article{
+    flex-basis: 350px;
+}
+.sidebar{
+    flex-basis: 350px;
+}
+}
+@media screen and (min-width:700px){
+    .article{
+        flex-basis: 200px;
+    }
+       .sidebar{
+           flex-basis: 200px;
+    }
 }
