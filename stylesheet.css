@@ -1,5 +1,6 @@
 body{
     background-color: gray;
+     
 }
 #title{
     margin-left: 100px;
@@ -7,43 +8,42 @@ body{
     text-decoration: underline;
     font-weight: bolder;
 }
-.header{
-    margin-left: 100px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: wavy;
-}
+.header-section{
+   display: flex;
+   justify-content:flex-start;
+  border: 5px solid #00cfff4a;
+   flex-wrap: wrap;
+}  
 #header-img{
-    margin-left: 100px;
+ 
     border-radius: 100px;
-    width: 200px;
-    height: 200px;
-    position: relative;
+    width: 120px;
+    height: 120px;
+  
+}
+.heading{
+    align-self: center;
+    text-decoration: underline;
 }
 .articles-section{
     display: flex;
-    flex-wrap: wrap;
-    border: 5px solid red;
+   flex-direction: column;
+   margin-top: 50px;
+    margin-left: auto;
+margin-right: auto;
 }
-.article{
+.container1{
     display: flex;
     font-size: medium;
     flex-wrap: wrap;
     justify-content: center;
-    border: 5px solid #00f3ff2e;
+    
     
     
 }
-
-#thefooter{
-   display: flex;
-   background-color:#00ffdb;
-
-}
-.afooter{
-   display: flex;
-   
-    font-size: medium;
+.article{
+  display: flex;  
+ flex-direction:  column;
 }
 
 
@@ -51,7 +51,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 5px solid red;
+    border: 5px solid #00cfff4a;
+    height: 300px;
 }
 .about{
     font-size: medium;
@@ -60,20 +61,55 @@ body{
 .about-p{
     font-size: medium;
 }
-@media screen and (min-width:400px){
 
-.article{
-    flex-basis: 350px;
+#thefooter{
+    display: flex;
+    background-color:#00f3ff2e;
+    
+ }
+
+ .afooter{
+    display: flex;
+    
+     font-size: medium;
+ }
+ @media screen and (min-width:600px) and (max-width:1024px){
+    
+     .articles-section{
+         flex-direction: row;
+         align-items: flex-start;
+     }
+     .heading{
+        align-self: flex-start;
+    }
+  
+.container1{
+    flex-basis: 1700px;
 }
 .sidebar{
-    flex-basis: 350px;
+    flex-direction: column;
+    
+    align-items: center;
 }
-}
-@media screen and (min-width:700px){
+
+ }
+ @media screen and (min-width:1024px){
+    .articles-section{
+        flex-direction:row;
+    align-items: flex-start;
+         
+    }
+    .container1{
+       flex-direction: row;
+       width: 500%;
+        flex-wrap: wrap;
+    }  
     .article{
-        flex-basis: 200px;
+        flex-basis: 288px;
+        flex-grow: 1;
+        font-size: small;
+        align-items: center;
+       
     }
-       .sidebar{
-           flex-basis: 200px;
-    }
+    
 }
